@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('/assets/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans-SM';
+    src: url('/assets/IBMPlexSans-SemiBold.ttf');
+    font-size: x-small
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans-Light SM';
+    src: url('/assets/IBMPlexSans-Light.ttf');
+}
+
+.typed-out{
+   
+    border-right: .30em solid #57CC99;
+    white-space: normal;
+    animation: 
+      blinking 1.4s infinite;
+    width: 51%;
+}
+
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: #57CC99; }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .typed-out {
+        border-right: .30em solid transparent;
+        white-space: normal;
+        animation: 
+        blinking 1.4s none;
+        width: 48%;
+        
+    }
+
+    @keyframes blinking {
+        from { border-color: transparent }
+        to { border-color: transparent; }
+      }
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
