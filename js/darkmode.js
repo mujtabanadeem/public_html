@@ -19,4 +19,4 @@
     element.classList.toggle("dark-mode");
   } */
 
-document.body.style.zoom = "300%"
+document.body.style.zoom = "150%"
