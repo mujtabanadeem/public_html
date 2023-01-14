@@ -1,19 +1,26 @@
+html, body
+{
+    margin: 0px; padding: 0px
+}
+
 
 @font-face {
     font-family: 'IBM Plex Sans';
     src: url('/assets/IBMPlexSans-SemiBold.ttf');
-    font-size: 50%;
+    font-size: 950%;
+   
 }
 
 @font-face {
     font-family: 'IBM Plex Sans-SM';
     src: url('/assets/IBMPlexSans-SemiBold.ttf');
-    font-size: x-small
+    font-size: 700%;
 }
 
 @font-face {
     font-family: 'IBM Plex Sans-Light SM';
     src: url('/assets/IBMPlexSans-Light.ttf');
+    font-size: 700%;
 }
 
 .typed-out{
@@ -22,7 +29,7 @@
     white-space: normal;
     animation: 
       blinking 1.4s infinite;
-    width: 51%;
+    width: 25%;
 }
 
 @keyframes blinking {
@@ -30,7 +37,7 @@
   to { border-color: #57CC99; }
 }
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+@media screen and (min-width: 0px) and (max-width: 1300px) {
     .typed-out {
         border-right: .30em solid transparent;
         white-space: normal;
@@ -45,7 +52,6 @@
         to { border-color: transparent; }
       }
 }
-
 
 
 @tailwind base;
